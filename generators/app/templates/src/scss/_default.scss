@@ -1,0 +1,31 @@
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Medium", 500);
+<% if(pngSprites){ %>@include sprites($spritesheet-sprites);
+@include retina-sprites($retina-groups);<%}%>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif, Arial;
+    background-color: #ccc;
+}
+
+.main {
+    flex: 1 1 auto;
+    background-color: coral;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

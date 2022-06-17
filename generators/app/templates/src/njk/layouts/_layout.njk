@@ -1,0 +1,27 @@
+{% import "../_mixins.njk" as mixins %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.min.css">
+    {# {% include "../components/_media-tags.njk" %} #}
+</head>
+    <body>
+        {% include "../components/_header.njk" %}
+
+        <main class="main">
+            <div class="container">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+
+        {% include "../components/_footer.njk" %}
+
+        <script type="text/javascript" src="js/build.main.js"></script>
+    </body>
+</html>

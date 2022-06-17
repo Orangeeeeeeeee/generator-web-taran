@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "indentation": 4,
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["include", "mixin"]
+    }],
+    "no-missing-end-of-source-newline": null,
+    "property-no-vendor-prefix": null
+  }
+}

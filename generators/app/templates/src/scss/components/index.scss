@@ -1,0 +1,4 @@
+@import "footer";<% if(svgSprites){ %>
+@import "svg-icon";<%}%><% if(pngSprites){ %>
+@import "png-icon";<%}%>
+@import "header";

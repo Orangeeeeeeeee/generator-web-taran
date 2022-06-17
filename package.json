@@ -1,0 +1,44 @@
+{
+  "name": "generator-web-taran",
+  "version": "0.0.1",
+  "description": "This generator create basic template for web dev.",
+  "homepage": "",
+  "author": {
+    "name": "Taran Sergiy",
+    "email": "tarannsergiy@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "husky": "^3.0.9",
+    "jest": "^26.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.7.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "mkdirp": "^1.0.4",
+    "yeoman-generator": "^3.1.1",
+    "yosay": "^2.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "Orangeeeeeeeee/generator-web-taran",
+  "license": "MIT"
+}
