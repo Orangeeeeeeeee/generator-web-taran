@@ -159,11 +159,7 @@ module.exports = class extends Generator {
                 bower: false
             });
         } else {
-            this.log(
-                "Run " +
-                    chalk.blue("yarn install") +
-                    " to install dependencies later"
-            );
+            this.log("Run " + chalk.blue("yarn install") + " to install dependencies later");
         }
     }
 
@@ -175,18 +171,10 @@ module.exports = class extends Generator {
             }
 
             if (this.answers.repo) {
-                const lsRemote = this.spawnCommandSync("git", [
-                    "ls-remote",
-                    this.answers.repo
-                ]);
+                const lsRemote = this.spawnCommandSync("git", ["ls-remote", this.answers.repo]);
 
-        if (lsRemote.status === 0) {
-                    this.spawnCommandSync("git", [
-                        "remote",
-                        "add",
-                        "origin",
-                        this.answers.repo
-                    ]);
+                if (lsRemote.status === 0) {
+                    this.spawnCommandSync("git", ["remote", "add", "origin", this.answers.repo]);
                 }
             }
         } catch (error) {
