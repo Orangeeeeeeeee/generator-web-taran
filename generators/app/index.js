@@ -121,13 +121,13 @@ module.exports = class extends Generator {
 
         this._copyResources("gulpfile.js", "gulpfile.js", this.answers);
         this._copyResources("package.json", "package.json", this.answers);
-        this._copyResources(".babelrc", ".babelrc");
-        this._copyResources(".browserslistrc", ".browserslistrc");
-        this._copyResources(".eslintrc", ".eslintrc");
-        this._copyResources(".gitignore", ".gitignore");
-        this._copyResources(".stylelintrc.json", ".stylelintrc.json");
-        this._copyResources(".stylelintignore", ".stylelintignore");
-        this._copyResources(".nvmrc", ".nvmrc");
+        this._copyResources("babelrc", ".babelrc");
+        this._copyResources("browserslistrc", ".browserslistrc");
+        this._copyResources("eslintrc", ".eslintrc");
+        this._copyResources("gitignore", ".gitignore");
+        this._copyResources("stylelintrc.json", ".stylelintrc.json");
+        this._copyResources("stylelintignore", ".stylelintignore");
+        this._copyResources("nvmrc", ".nvmrc");
         this._copyResources("README.md", "README.md");
         this._copyResources("webpack.config.js", "webpack.config.js");
 
